@@ -168,7 +168,7 @@ export default function Post({ id, username, user_id, caption, currentUser }) {
       {/* ... */}
       <div className="">
         <div className="flex items-center p-4">
-          <Link href={`/${username}`}>
+          <div>
             {userImage && (
               <Image
                 width={100}
@@ -181,12 +181,12 @@ export default function Post({ id, username, user_id, caption, currentUser }) {
                 blurDataURL="/spinner.svg"
               />
             )}
-          </Link>
-          <Link href={`/${username}`} className="font-bold flex-1">
+          </div>
+          <div className="font-bold flex-1">
             <p className="hover:underline hover:underline-offset-1">
               {username}
             </p>
-          </Link>
+          </div>
           <BsThreeDots className="h-5 cursor-pointer" />
         </div>
         {postImage && (
