@@ -1,6 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    domains: ["www.facebook.com"],
-}
+  images: {
+    domains: ["socodigital.com"],
+  },
+  experimental: {
+    serverActions: true,
+  },
+  api: {
+    bodyParser: {
+      sizeLimit: "8mb",
+    },
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
